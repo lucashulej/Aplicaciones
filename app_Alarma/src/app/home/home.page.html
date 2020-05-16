@@ -1,0 +1,14 @@
+<div class="fondo">
+  <div class="divDesactivado" id="divDesactivado">Desactivado</div>
+  <div class="divActivado" id="divActivado" hidden>Activado</div>
+  <button type="button" class="botonActivar" id="botonActivar" (click)="start()">Activar</button>
+  <button type="button" class="botonDesactivar" id="botonDesactivar" (click)="esconder()">Desactivar</button>
+  <button type="button" class="botonVolver" id="botonVolver" (click)="returnToLogin()">Volver</button>
+  <input type="text" class="inputClave" id="inputClave" value="Ingrese Constraseña" (click)="clickInput()" hidden>
+  <button type="button" class="botonClave" id="botonClave" (click)="claveSubmit()" hidden>aceptar</button>
+</div>
+<div class="loadingContainer2" id="loadingContainer2" hidden>
+  <div class="loading2">
+    <img src="../../assets/logoEmpresa.png">
+  </div>
+</div>

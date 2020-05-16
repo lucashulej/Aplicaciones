@@ -1,0 +1,26 @@
+#fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/splashNinios.png") no-repeat center / cover;
+}
+
+#logoSplash{
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    left: 40vw;
+    top: 50vh;
+    align-items: center;
+    justify-content: center;
+    animation: animacion 4s;
+    position: absolute;
+    transform: rotate(-44deg);
+}
+
+@keyframes animacion{
+    100% {top: -4vh;}
+}

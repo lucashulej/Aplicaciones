@@ -1,0 +1,361 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}
+
+.fondo{
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    left: 0vw;
+    right: 0vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: url(../../../assets/fondo6.png) center;
+}
+
+.rectangulo {
+    width: 100vw; 
+    height: 100vh;     
+}
+
+.entrada{
+    position: abdolute;
+    width: 100vw; 
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 10px solid black;
+    z-index: 100;
+}
+
+.label1{
+    position: absolute;
+    width: 80vw; 
+    height: 5vh;
+    top: 5vh;
+    left: 10vw;
+    border-radius: 10px;
+    background-color: red;
+    color:  white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh; 
+    font-size: 3vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.input1{
+    position: absolute;
+    width: 80vw; 
+    height: 5vh;
+    top: 10vh;
+    left: 10vw;
+    color: white;
+    border-bottom: 3px solid red;
+    font-size: 3vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.label2{
+    position: absolute;
+    width: 80vw; 
+    height: 5vh;
+    top: 22vh;
+    left: 10vw;
+    border-radius: 10px;
+    background-color:  rgb(255, 0, 0);
+    color:  white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh; 
+    font-size: 3vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.input2{
+    position: absolute;
+    width: 80vw; 
+    height: 5vh;
+    top: 27vh;
+    left: 10vw;
+    background-color:  rgba(255, 0, 0, 0);
+    color: white;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    font-size: 3vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+//CORREO INVALIDO
+.mensaje1{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 35vh;
+    left: 10vw;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh; 
+    font-size: x-large;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    animation: moverMensaje1 2s linear;
+}
+
+
+//CONTRASEÑA INVALIDA
+.mensaje2{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 43vh;
+    left: 10vw;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh; 
+    font-size: x-large;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    animation: moverMensaje1 2s linear;
+}
+
+
+//USUARIO NO ENCONTRADO
+.mensaje3{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 39vh;
+    left: 10vw;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh; 
+    font-size: x-large;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    animation: moverMensaje1 2s linear;
+}
+  
+.contenedorImagen{
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    top: 50vh;
+    left: 0vw;
+}
+
+.imagen{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: 50vw;
+    top: 10px;
+}
+
+.boton1{
+    position: absolute; 
+    width: 70vw; 
+    height: 10vh;
+    top: 51vh;
+    left: 15vw;
+    color: white;
+    background-color:  rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px rgb(71, 0, 0);
+    font-size: 5vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.boton1:active{
+    transform: translate(0px, 5px);
+    background-color:  rgb(204, 0, 0);
+    box-shadow: 0 5px rgb(71, 0, 0);
+}
+
+.boton2{
+    position: absolute; 
+    width: 70vw; 
+    height: 10vh;
+    top: 68vh;
+    left: 15vw;
+    color: white;
+    background-color:  rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px rgb(71, 0, 0);
+    font-size: 5vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.boton2:active{
+    transform: translate(0px, 5px);
+    background-color:  rgb(204, 0, 0);
+    box-shadow: 0 5px rgb(71, 0, 0);
+}
+
+.botonUsuario1{
+    position: absolute; 
+    width: 14vw; 
+    height: 7vh;
+    top: 85vh;
+    left: 5vw;
+    color: white;
+    background-color:  rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px rgb(71, 0, 0);
+    font-size: 5vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.botonUsuario1:active{
+    transform: translate(0px, 5px);
+    background-color:  rgb(204, 0, 0);
+    box-shadow: 0 5px rgb(71, 0, 0);
+}
+
+.botonUsuario2{
+    position: absolute; 
+    width: 14vw; 
+    height: 7vh;
+    top: 85vh;
+    left: 24vw;
+    color: white;
+    background-color:  rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px rgb(71, 0, 0);
+    font-size: 5vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.botonUsuario2:active{
+    transform: translate(0px, 5px);
+    background-color:  rgb(204, 0, 0);
+    box-shadow: 0 5px rgb(71, 0, 0);
+}
+
+.botonUsuario3{
+    position: absolute; 
+    width: 14vw; 
+    height: 7vh;
+    top: 85vh;
+    left: 43vw;
+    color: white;
+    background-color:  rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px rgb(71, 0, 0);
+    font-size: 5vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.botonUsuario3:active{
+    transform: translate(0px, 5px);
+    background-color:  rgb(204, 0, 0);
+    box-shadow: 0 5px rgb(71, 0, 0);
+}
+
+.botonUsuario4{
+    position: absolute; 
+    width: 14vw; 
+    height: 7vh;
+    top: 85vh;
+    left: 62vw;
+    color: white;
+    background-color:  rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px rgb(71, 0, 0);
+    font-size: 5vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.botonUsuario4:active{
+    transform: translate(0px, 5px);
+    background-color:  rgb(204, 0, 0);
+    box-shadow: 0 5px rgb(71, 0, 0);
+}
+
+.botonUsuario5{
+    position: absolute; 
+    width: 14vw; 
+    height: 7vh;
+    top: 85vh;
+    left: 81vw;
+    color: white;
+    background-color:  rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px rgb(71, 0, 0);
+    font-size: 5vh;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.botonUsuario5:active{
+    transform: translate(0px, 5px);
+    background-color:  rgb(204, 0, 0);
+    box-shadow: 0 5px rgb(71, 0, 0);
+}
+
+.loadingContainer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.678);
+    z-index: 299;
+}
+
+.loading{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 300;
+    animation: round 2s linear infinite;
+    background-color: red;
+    border-radius: 100px;
+}
+
+@keyframes round{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes moverMensaje1{
+    from {transform: scale(0.5, 0.5);}
+    to {transform: scale(1, 1);}
+}
+
+@keyframes moverMensaje2{
+    from {transform: scale(0.5, 0.5);}
+    to {transform: scale(1, 1);}
+}
+
+@keyframes moverMensaje3{
+    from {transform: scale(0.5, 0.5);}
+    to {transform: scale(1, 1);}
+}

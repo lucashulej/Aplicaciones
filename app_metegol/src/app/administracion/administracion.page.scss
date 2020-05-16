@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}
+
+.fondoAdministracion{
+    background-image: url("../../assets/fondo4.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.botonVolverAdministracion{
+    position: absolute; 
+    width: 20vw; 
+    height: 5vh;
+    left: 5vw;
+    top: 5vh;
+    font-size: 2vh;
+    font-family: "Impact", "fantasy";
+    text-align: center center;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.loadingContainerAdministracion{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.678);
+    z-index: 299;
+}
+  
+.loadingAdministracion{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 300;
+    animation: roundAdministracion 2s linear infinite;
+    background-color: green;
+    border-radius: 100px;
+}
+
+.botonNuevoPartido{
+    position: absolute; 
+    width: 70vw; 
+    height: 20vh;
+    top: 15vh;
+    left: 15vw;
+    font-size: 4vh;
+    background-color: rgba(255, 255, 255, 0.795);
+    border: 2px solid black;
+    color: black;
+    font-family: "Impact", "fantasy";
+    border-radius: 25%;
+}
+
+.botonVerPartidos{
+    position: absolute; 
+    width: 70vw; 
+    height: 20vh;
+    top: 45vh;
+    left: 15vw;
+    font-size: 4vh;
+    background-color: rgba(255, 255, 255, 0.795);
+    border: 2px solid black;
+    color: black;
+    font-family: "Impact", "fantasy";
+    border-radius: 25%;
+}
+
+.botonMejoresJugadores{
+    position: absolute; 
+    width: 70vw; 
+    height: 20vh;
+    top: 75vh;
+    left: 15vw;
+    font-size: 4vh;
+    background-color: rgba(255, 255, 255, 0.795);
+    border: 2px solid black;
+    color: black;
+    font-family: "Impact", "fantasy";
+    border-radius: 25%;
+}
+
+.errorSoloAdmin{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 37vh;
+    left: 10vw;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.76);
+    border: 0px;
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+    font-size: 3vh;
+    font-family: "Impact", "fantasy";
+    animation: moverMensajeAdmin 2s linear;
+}
+
+@keyframes roundAdministracion{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+  
+@keyframes moverMensajeAdmin{
+    0%   {left:0vw;}  
+    67%  {left:20vw;}
+    100%  {left:10vw;}
+}

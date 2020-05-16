@@ -1,0 +1,27 @@
+#fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/splashMetegol.png") no-repeat center / cover;
+}
+
+#logoSplash{
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    left: 20vw;
+    bottom: 30vh;
+    align-items: center;
+    justify-content: center;
+    animation: animacion 4s linear infinite;
+    position: absolute;
+}
+
+@keyframes animacion{
+    from{transform: rotate(0deg); left: 0vw;}  
+    to{transform: rotate(360deg); left: 80vw;}  
+    50% {bottom: 50vh;}
+}

@@ -1,0 +1,229 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  outline: none;
+}
+
+.fondo{
+  background-image: url("../../assets/fondo4.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.botonAceptar{
+  position: absolute; 
+  width: 20vw; 
+  height: 5vh;
+  left: 75vw;
+  top: 5vh;
+  font-size: 2vh;
+  font-family: "Impact", "fantasy";
+  text-align: center center;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.botonVolver{
+  position: absolute; 
+  width: 20vw; 
+  height: 5vh;
+  left: 5vw;
+  top: 5vh;
+  font-size: 2vh;
+  font-family: "Impact", "fantasy";
+  text-align: center center;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.sumaJugador1{
+  position: absolute;
+  width: 14vw;
+  height: 7vh;
+  top: 30vh;
+  left: 15vw;
+  font-size: 5vh;
+  color: white;
+  background-color: red;
+}
+
+.restaJugador1{
+  position: absolute;
+  width: 14vw;
+  height: 7vh;
+  top: 30vh;
+  right: 15vw;
+  font-size: 5vh;
+  color: white;
+  background-color: red;
+}
+
+.inputJugador1{
+  position: absolute;
+  width: 40vw;
+  height: 7vh;
+  top: 20vh;
+  left: 30vw;
+  background-color: red;
+  font-size: 2vh;
+  font-family: "Impact", "fantasy";
+  text-align: center;
+  border: none;
+}
+
+.puntos1{
+  position: absolute;
+  width: 30vw;
+  height: 7vh;
+  top: 30vh;
+  left: 35vw;
+  color: red;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 4vh;
+  line-height: 7vh;
+  font-family: "Impact", "fantasy";
+  text-align: center;
+  border: none;
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+.fecha{
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  top: 45vh;
+  left: 30vw;
+  font-size: 2vh;
+  color: black;
+  background-color: yellow;
+  font-family: "Impact", "fantasy";
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+.sumaJugador2{
+  position: absolute;
+  width: 14vw;
+  height: 7vh;
+  bottom: 30vh;
+  left: 15vw;
+  font-size: 5vh;
+  color: white;
+  background-color: blue;
+}
+
+.restaJugador2{
+  position: absolute;
+  width: 14vw;
+  height: 7vh;
+  bottom: 30vh;
+  right: 15vw;
+  font-size: 5vh;
+  color: white;
+  background-color: blue;
+}
+
+.inputJugador2{
+  position: absolute;
+  width: 40vw;
+  height: 7vh;
+  bottom: 20vh;
+  left: 30vw;
+  color: white;
+  background-color: blue;
+  font-size: 2vh;
+  font-family: "Impact", "fantasy";
+  text-align: center;
+  border: none;
+}
+
+.puntos2{
+  position: absolute;
+  width: 30vw;
+  height: 7vh;
+  bottom: 30vh;
+  left: 35vw;
+  color: blue;
+  background-color: rgba(252, 252, 252, 0);
+  font-size: 4vh;
+  line-height: 7vh;
+  font-family: "Impact", "fantasy";
+  text-align: center;
+  border: none;
+}
+
+.errorDatos{
+  position: absolute;
+  width: 80vw; 
+  height: 6vh;
+  top: 90vh;
+  left: 10vw;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.76);
+  border: 0px;
+  border-radius: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 6vh;
+  font-size: 3vh;
+  font-family: "Impact", "fantasy";
+  animation: moverMensajeError 2s linear;
+}
+
+.sacarFotoPartidos{
+  position: absolute; 
+  width: 20vw; 
+  height: 10vh;
+  left: 40vw;
+  top: 90vh;
+  font-size: 2vh;
+  font-family: "Impact", "fantasy";
+  text-align: center center;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.loadingContainer2{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.678);
+  z-index: 299;
+}
+
+.loading2{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 300;
+  animation: round 2s linear infinite;
+  background-color: green;
+  border-radius: 100px;
+}
+
+@keyframes round{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+@keyframes moverMensajeError{
+  0%   {left:0vw;}  
+  67%  {left:20vw;}
+  100%  {left:10vw;}
+}

@@ -1,0 +1,12 @@
+<div class="fondoAdministracion">
+  <button class="botonVolverAdministracion" (click)="returnAdministracion()">Volver</button>
+  <button class="botonNuevoPartido" id="botonNuevoPartido" (click)="goToNuevoPartido()">Nuevo Partido</button>
+  <button class="botonVerPartidos" id="botonVerPartidos" (click)="goToVerPartidos()">Ver Partidos</button>
+  <button class="botonMejoresJugadores" id="botonMejoresJugadores" (click)="goToMejoresJugadores()">Mejores Jugadores</button>
+  <div class="errorSoloAdmin" id="errorSoloAdmin" hidden>solo admin</div>
+</div>
+<div class="loadingContainerAdministracion" id="loadingContainerAdministracion" hidden>
+  <div class="loadingAdministracion">
+    <img src="../../assets/logoEmpresa.png">
+  </div>
+</div>

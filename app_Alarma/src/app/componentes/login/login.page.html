@@ -1,0 +1,43 @@
+<ion-content>
+<div class="fondo">
+  <form  (ngSubmit) ="onSubmitLogin()">
+
+    <div class="rectangulo">
+
+      <label class="label1">Correo Electrónico</label>
+      <ion-input type="text" class="input1" id="input1" name="email"></ion-input>
+      <div id="mensaje1" class="mensaje1" hidden>
+        <p>Correo invalido</p>
+      </div>
+
+      <label class="label2">Contraseña</label>
+      <ion-input type="password" class="input2" id="input2" name="password"></ion-input>
+      <div id="mensaje2" class="mensaje2" hidden>
+        <p>Contraseña invalida</p>
+      </div>
+      <div id="mensaje3" class="mensaje3" hidden>
+        <p>Usuario no encontrado </p>
+      </div>
+      <button type="submit" class="boton1">Enviar</button>
+      <button type="reset" (click)="clearInputs()" (click)="hideDirs()" class="boton2">Limpiar</button>
+
+      <button type="button" id="botonUsuario1" class="botonUsuario1" value="admin@admin.com" (click)="completar1()">admin@admin.com</button>
+      <button type="button" id="botonUsuario2" class="botonUsuario2" value="invitado@invitado.com" (click)="completar2()" >invitado@invitado.com</button>
+      <button type="button" id="botonUsuario3" class="botonUsuario3" value="usuario@usuario.com" (click)="completar3()" >usuario@usuario.com</button>
+      <button type="button" id="botonUsuario4" class="botonUsuario4" value="anonimo@anonimo.com" (click)="completar4()" >anonimo@anonimo.com</button>
+      <button type="button" id="botonUsuario5" class="botonUsuario5" value="tester@tester.com" (click)="completar5()" >tester@tester.com</button>
+
+    </div>
+    
+  </form>
+  <div class="loadingContainer" id="loadingContainer" hidden>
+    <div class="loading">
+      <img src="../../../assets/logoEmpresa.png">
+    </div>
+  </div>
+</div>
+</ion-content>
+
+
+
+

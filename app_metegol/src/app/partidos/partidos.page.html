@@ -1,0 +1,24 @@
+<div class="fondoPartidos">
+  <button class="botonVolverPartidos" (click)="returnPartidos()">Volver</button>
+  <table class="tablaPartidos">
+    <tr class="filasPartidos">
+      <th>Fecha:</th>
+      <th>Jugador 1:</th>
+      <th>Jugador 2:</th>
+      <th>Ganador:</th>
+      <th>Foto:</th>
+    </tr>
+    <tr *ngFor="let partido of this.mostrar" class="filasPartidos">
+      <td>{{partido.fecha}}</td>
+      <td>{{partido.jugador1}}</td>
+      <td>{{partido.jugador2}}</td>
+      <td>{{partido.ganador}}</td>
+      <td><img [src]=partido.foto alt=""></td>
+    </tr>
+  </table>
+</div>
+<div class="loadingContainerPartidos" id="loadingContainerPartidos" hidden>
+  <div class="loadingPartidos">
+    <img src="../../assets/logoEmpresa.png">
+  </div>
+</div>

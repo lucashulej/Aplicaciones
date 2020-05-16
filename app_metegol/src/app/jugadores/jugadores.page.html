@@ -1,0 +1,18 @@
+<div class="fondoJugadores">
+  <button class="botonVolverJugadores" (click)="returnJugadores()">Volver</button>
+  <table class="tablaJugadores">
+    <tr class="filas">
+      <th>Nombre: </th>
+      <th>Partidos Ganados: </th>
+    </tr>
+    <tr *ngFor="let jugador of this.listaJugadores" class="filas">
+      <td>{{jugador.nombre}}</td>
+      <td>{{jugador.partidosGanados}}</td>
+    </tr>
+  </table>
+</div>
+<div class="loadingContainerJugadores" id="loadingContainerJugadores" hidden>
+  <div class="loadingJugadores">
+    <img src="../../assets/logoEmpresa.png">
+  </div>
+</div>

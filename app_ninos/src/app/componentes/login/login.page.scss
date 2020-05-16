@@ -1,0 +1,224 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}
+
+.fondo{
+    background-image: url("../../../assets/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.rectangulo {
+    width: 100vw; 
+    height: 100vh;     
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moverInicio 2s linear;
+}
+
+.label1{
+    position: absolute;
+    width: 100vw; 
+    height: 10vh;
+    top: 0vh;
+    left: 0vw;
+    background-color: rgb(27, 165, 0);
+    color:  black;
+    vertical-align: middle;
+    line-height: 10vh; 
+    font-size: 3vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.input1{
+    position: absolute;
+    width: 100vw; 
+    height: 10vh;
+    top: 10vh;
+    left: 0vw;
+    background-color: deeppink;
+    opacity: 75%;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh; 
+    font-size: 3vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+
+.label2{
+    position: absolute;
+    width: 100vw; 
+    height: 10vh;
+    top: 20vh;
+    left: 0vw;
+    background-color: steelblue;
+    color:  black;
+    line-height: 10vh; 
+    font-size: 3vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.input2{
+    position: absolute;
+    width: 100vw; 
+    height: 10vh;
+    top: 30vh;
+    left: 0vw;
+    background-color: orange;
+    opacity: 75%;
+    color: black;
+    text-align: center;
+    line-height: 10vh; 
+    font-size: 3vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+//CORREO INVALIDO
+.mensaje1{
+    position: absolute;
+    width: 80vw; 
+    height: 15vh;
+    top: 50vh;
+    background-color:  red;
+    border: 4px solid black;
+    color: black;
+    left: 10vw;
+    text-align: center;
+    line-height: 15vh; 
+    font-size: 3vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    animation: moverMensaje 2s linear;
+}
+
+
+//CONTRASEÑA INVALIDA
+.mensaje2{
+    position: absolute;
+    width: 80vw; 
+    height: 15vh;
+    top: 65vh;
+    background-color:  red;
+    border: 4px solid black;
+    color: black;
+    left: 10vw;
+    text-align: center;
+    line-height: 15vh; 
+    font-size: 3vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    animation: moverMensaje 2s linear;
+}
+
+
+//USUARIO NO ENCONTRADO
+.mensaje3{
+    position: absolute;
+    width: 80vw; 
+    height: 20vh;
+    top: 55vh;
+    background-color:  red;
+    border: 4px solid black;
+    color: black;
+    left: 10vw;
+    text-align: center;
+    line-height: 20vh; 
+    font-size: 3vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    animation: moverMensaje 2s linear;
+}
+
+.boton1{
+    position: absolute; 
+    width: 50vw; 
+    height: 20vh;
+    top: 80vh;
+    right: 50vw;
+    color: black;
+    vertical-align: middle;
+    line-height: 20vh; 
+    font-size: 5vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: crimson;
+}
+
+.boton2{
+    position: absolute; 
+    width: 50vw; 
+    height: 20vh;
+    top: 80vh;
+    right: 0vw;
+    color: black;
+    vertical-align: middle;
+    line-height: 20vh; 
+    font-size: 5vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: royalblue;
+}
+
+.lista{
+    position: absolute; 
+    width: 100vw; 
+    height: 10vh;
+    top: 40vh;
+    left: 0vw;;
+    color: black;
+    vertical-align: middle;
+    line-height: 10vh; 
+    font-size: 3vh;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: aqua;
+}
+
+.opciones{
+    background-color:  rgba(255, 255, 255, 0.507);
+}
+
+.loadingContainer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 299;
+}
+
+.loading{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 300;
+    animation: round 2s linear infinite;
+    background-color: blue;
+    border-radius: 100px;
+}
+
+@keyframes round{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes moverInicio{
+    0% {top: -100vh;}
+    100% {top: 0vh;}
+}
+
+@keyframes moverMensaje{
+    0% {left: -80vw;}
+    100% {left: 10vw;}
+}

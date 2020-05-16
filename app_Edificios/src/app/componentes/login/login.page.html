@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="fondo">
+    <form  (ngSubmit) ="onSubmitLogin()">
+  
+      <div class="rectangulo">
+        <label class="label1">Correo Electronico</label>
+        <ion-input type="text" class="input1" id="input1" name="email"></ion-input>
+        
+  
+        <label class="label2">Contraseña</label>
+        <ion-input type="password" class="input2" id="input2" name="password"></ion-input>
+     
+        
+        <button type="submit" class="boton1">Enviar</button>
+        <button type="reset" (click)="clearInputs()" (click)="hideDirs()" class="boton2">Limpiar</button>
+        <select id="lista" class="lista" (change)="completar()">
+          <option disabled selected hidden>Elija un usuario</option>
+          <option  *ngFor="let usuario of usuarios | async" [value]="usuario.correo" class="opciones">{{usuario.correo}}</option>
+        </select>
+       
+      </div>
+      
+    </form>
+    <div class="loadingContainerLogin" id="loadingContainerLogin" hidden>
+      <div class="loadingLogin">
+        <img src="../../../assets/logoEmpresa.png">
+      </div>
+    </div>
+  </div>
+    <!--MENSAJES DE ERROR--> 
+    <div id="mensaje1" class="mensaje1" hidden>
+      <p>Correo invalido</p>
+    </div>
+    <div id="mensaje2" class="mensaje2" hidden>
+      <p>Contraseña invalida</p>
+    </div>
+    <div id="mensaje3" class="mensaje3" hidden>
+      <p>Usuario no encontrado </p>
+    </div>
+  </ion-content>

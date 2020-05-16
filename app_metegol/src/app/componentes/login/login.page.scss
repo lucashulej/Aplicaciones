@@ -1,0 +1,238 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}
+
+.fondo{
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    left: 0vw;
+    right: 0vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: url("../../../assets/fondo4.png") center center;
+    background-size: 100vw 100vh;
+}
+
+.rectangulo {
+    width: 100vw; 
+    height: 100vh;     
+}
+
+.label1{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 8vh;
+    left: 10vw;
+    color:  white;
+    border-radius: 25px;
+    font-size: 3vh;
+    font-family: "Impact", "fantasy";
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.input1{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 16vh;
+    left: 10vw;
+    color:  black;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2vh;
+    font-family: "Impact", "fantasy";
+    background-color: rgba(255, 255, 255, 0.795);
+    border: 2px solid black;
+}
+
+.label2{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 28vh;
+    left: 10vw;
+    color:  white;
+    border-radius: 25px;
+    font-size: 3vh;
+    font-family: "Impact", "fantasy";
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.input2{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 36vh;
+    left: 10vw;
+    color:  black;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2vh;
+    font-family: "Impact", "fantasy";
+    background-color: rgba(255, 255, 255, 0.795);
+    border: 2px solid black;
+}
+
+//CORREO INVALIDO
+.mensaje1{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 44vh;
+    left: 10vw;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.76);
+    border: 0px;
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+    font-size: 3vh;
+    font-family: "Impact", "fantasy";
+    animation: moverMensajes 2s linear;
+}
+
+//CONTRASEÑA INVALIDA
+.mensaje2{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 52vh;
+    left: 10vw;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.76);
+    border: 0px;
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+    font-size: 3vh;
+    font-family: "Impact", "fantasy";
+    animation: moverMensajes 2s linear;
+}
+
+//USUARIO NO ENCONTRADO
+.mensaje3{
+    position: absolute;
+    width: 80vw; 
+    height: 6vh;
+    top: 48vh;
+    left: 10vw;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.76);
+    border: 0px;
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vh;
+    font-size: 3vh;
+    font-family: "Impact", "fantasy";
+    animation: moverMensajes 2s linear;
+}
+
+.boton1{
+    position: absolute; 
+    width: 20vh; 
+    height: 20vh;
+    top: 75vh;
+    left: 5vw;
+    font-size: 4vh;
+    color: white;
+    font-family: "Arial Black";
+    background-image: url("../../../assets/pelota4.png");
+    font-family: "Impact", "fantasy";
+    background-color: rgba(7, 0, 0, 0.473);
+    background-size: 20vh 20vh;
+    border-radius: 100%;
+}
+
+.boton2{
+    position: absolute; 
+    width: 20vh; 
+    height: 20vh;
+    top: 75vh;
+    right: 5vw;
+    font-size: 4vh;
+    color: white;
+    font-family: "Impact", "fantasy";
+    background-image: url("../../../assets/pelota4.png");
+    background-color: rgba(7, 0, 0, 0.473);
+    background-size: 20vh 20vh;
+    border-radius: 100%;
+}
+
+.boton1:active {
+    transform: translateY(10px);
+}
+
+.boton2:active {
+    transform: translateY(10px);
+}
+
+.lista{
+    position: absolute; 
+    width: 80vw; 
+    height: 9vh;
+    top: 60vh;
+    left: 10vw;;
+    color: black;
+    font-size: 3vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.795);
+    border: 2px solid black;
+    font-family: "Impact", "fantasy";
+    border-radius: 25px;
+}
+
+.opciones{
+    background-color: rgba(7, 0, 0, 0.473);
+    font-size: 3vh;
+    text-align: center;
+    font-family: "Impact", "fantasy";
+}
+
+.loadingContainer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.678);
+    z-index: 299;
+}
+
+.loading{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 300;
+    animation: round 2s linear infinite;
+    background-color: green;
+    border-radius: 100px;
+}
+
+@keyframes round{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes moverMensajes{
+    0%   {left:0vw;}  
+    67%  {left:20vw;}
+    100%  {left:10vw;}
+}

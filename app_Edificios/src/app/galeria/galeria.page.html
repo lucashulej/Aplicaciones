@@ -1,0 +1,22 @@
+<div class="fondoGaleria">
+  <div class="divFeoGaleria" id="divFeoGaleria" hidden>Cosas Feas</div>
+  <div class="divLindoGaleria" id="divLindoGaleria" hidden>Cosas Lindas</div>
+  
+  <div class="tablaFotos">
+  
+        <div class="contenedorImagenes" *ngFor="let foto of this.urlOrdenado">
+          <img class="imagen" src="{{foto.foto}}">
+          <div class="infoFoto">{{foto.usuario}} - {{foto.fecha}}</div>
+          <button class="like" id="like" (click)="like(foto)" *ngIf="!buscarLikes(foto.foto)">me gusta</button>
+          <button class="dislike" id="dislike" (click)="dislike(foto)" *ngIf="buscarLikes(foto.foto)">no me gusta</button>
+        </div>
+     
+  </div>
+
+  <button class="botonVolverGaleria" id="botonVolverGaleria" (click)="volverGaleria()">←</button>
+</div>
+<div class="loadingContainerGaleria" id="loadingContainerGaleria" hidden>
+  <div class="loadingGaleria">
+    <img src="../../assets/logoEmpresa.png">
+  </div>
+</div>

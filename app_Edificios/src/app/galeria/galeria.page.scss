@@ -1,0 +1,150 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+  }
+  
+.fondoGaleria{
+    background-image: url("../../assets/fondo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.botonVolverGaleria{
+    position: absolute; 
+    width: 15vw; 
+    height: 5vh;
+    top: 1vh;
+    left: 1vw;
+    font-size: 4vh;
+    border-radius: 100px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.678);
+    font-family: "Lucida Console", sans-serif;
+}
+  
+.tablaFotos{
+    position: absolute;
+    width: 90vw;
+    height: 80vh;
+    top: 15vh;
+    left: 5vw;
+    background-color: rgba(128, 128, 128, 0.781);
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+
+
+.filasFotos{
+    font-size: 2vh;
+    font-family: "Impact", "fantasy";
+}
+
+.contenedorImagenes{
+    margin-bottom: 3%;
+}
+
+.imagen{
+    padding: 3%;
+}
+
+.like{
+    position: relative;
+    background-color: grey;
+    left: -1%;
+    width: 45%;
+    padding: 5%;
+    font-family: "Lucida Console", sans-serif;
+}
+
+
+.dislike{
+    position: relative;
+    background-color: grey;
+    right: -1%;
+    width: 46%;
+    padding: 5%;
+    font-family: "Lucida Console", sans-serif;
+}
+
+.infoFoto{
+    position: relative;
+    background-color: orange;
+    color: black;
+    left: 3%;
+    height: 10%;
+    width: 94%;
+    padding: 4%;
+    margin-bottom: 1%;
+    font-family: "Lucida Console", sans-serif;
+}
+
+.divFeoGaleria{
+    position: absolute; 
+    width: 50vw; 
+    height: 5vh;
+    top: 1vh;
+    font-size: 2vh;
+    border-radius: 100px;
+    color: black;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 2vh;
+    font-family: "Lucida Console", sans-serif;
+}
+
+.divLindoGaleria{
+    position: absolute; 
+    width: 50vw; 
+    height: 5vh;
+    top: 1vh;
+    font-size: 2vh;
+    border-radius: 100px;
+    color: black;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 2vh;
+    font-family: "Lucida Console", sans-serif;
+  }
+
+.loadingContainerGaleria{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.534);
+    z-index: 299;
+}
+  
+.loadingGaleria{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 300;
+    animation: roundGaleria 2s linear infinite;
+    background-color: grey;
+    border-radius: 100px;
+}
+  
+@keyframes roundGaleria{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}

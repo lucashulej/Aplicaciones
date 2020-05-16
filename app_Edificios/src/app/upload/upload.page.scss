@@ -1,0 +1,174 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+  }
+  
+  .fondo{
+    background-image: url("../../assets/fondo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .botonVolverUpload{
+    position: absolute; 
+    width: 15vw; 
+    height: 5vh;
+    top: 1vh;
+    left: 1vw;
+    font-size: 4vh;
+    border-radius: 100px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.678);
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  .botonVolverUpload:active{
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.678);
+    transform: translate(3px, 3px);
+  }
+
+  .divFeo{
+    position: absolute; 
+    width: 50vw; 
+    height: 5vh;
+    top: 1vh;
+    font-size: 2vh;
+    border-radius: 100px;
+    color: black;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 2vh;
+    font-family: "Lucida Console", sans-serif;
+  }
+
+  .divLindo{
+    position: absolute; 
+    width: 50vw; 
+    height: 5vh;
+    top: 1vh;
+    font-size: 2vh;
+    border-radius: 100px;
+    color: black;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 2vh;
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  .botonTomar{
+    position: absolute; 
+    width: 60vw; 
+    height: 15vh;
+    top: 8vh;
+    left: 20vw;
+    font-size: 4vh;
+    border-radius: 100px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.678);
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  .botonTomar:active{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.678);
+    transform: translate(5px, 5px);
+  }
+  
+  .botonSubir{
+    position: absolute; 
+    width: 60vw; 
+    height: 15vh;
+    top: 31vh;
+    left: 20vw;
+    font-size: 4vh;
+    border-radius: 100px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.678);
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  .botonSubir:active{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.678);
+    transform: translate(5px, 5px);
+  }
+  
+  .botonPropio{
+    position: absolute; 
+    width: 60vw; 
+    height: 15vh;
+    top: 54vh;
+    left: 20vw;
+    font-size: 4vh;
+    border-radius: 100px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.678);
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  .botonPropio:active{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.678);
+    transform: translate(5px, 5px);
+  }
+
+  .botonGeneral{
+    position: absolute; 
+    width: 60vw; 
+    height: 15vh;
+    top: 77vh;
+    left: 20vw;
+    font-size: 4vh;
+    border-radius: 100px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.507);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.678);
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  .botonGeneral:active{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.678);
+    transform: translate(5px, 5px);
+  }
+  
+  .loadingContainerUpload{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.534);
+    z-index: 299;
+  }
+  
+  .loadingUpload{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 300;
+    animation: roundUpload 2s linear infinite;
+    background-color: grey;
+    border-radius: 100px;
+  }
+  
+  @keyframes roundUpload{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }

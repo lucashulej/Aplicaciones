@@ -1,0 +1,14 @@
+<div class="fondo">
+  <div class="divFeo" id="divFeo" hidden>Cosas Feas</div>
+  <div class="divLindo" id="divLindo" hidden>Cosas Lindas</div>
+  <button type="button" id="botonTomar" class="botonTomar" (click)="takePhoto()">Sacar Foto</button>
+  <button type="button" id="botonSubir" class="botonSubir"(click)="subirFoto()">Subir Foto</button>
+  <button type="button" id="botonPropio" class="botonPropio" (click)="galeriaPropia()">Galeria Propia</button>
+  <button type="button" id="botonGeneral" class="botonGeneral" (click)="galeriaGeneral()">Galeria General</button>
+  <button type="button" id="botonVolverUpload" class="botonVolverUpload" (click)="volverUpload()">←</button>
+</div>
+<div class="loadingContainerUpload" id="loadingContainerUpload" hidden>
+  <div class="loadingUpload">
+    <img src="../../assets/logoEmpresa.png">
+  </div>
+</div>

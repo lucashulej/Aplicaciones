@@ -1,0 +1,7 @@
+{
+  "name": "app_ninos",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}
+
+.fondoPartidos{
+    background-image: url("../../assets/fondo4.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.botonVolverPartidos{
+    position: absolute; 
+    width: 20vw; 
+    height: 5vh;
+    left: 5vw;
+    top: 5vh;
+    font-size: 2vh;
+    font-family: "Impact", "fantasy";
+    text-align: center center;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.tablaPartidos{
+    position: absolute;
+    width: 90vw;
+    height: 60vh;
+    top: 20vh;
+    left: 5vw;
+    background-color: rgba(128, 128, 128, 0.781);
+    border: 2px solid black;
+    overflow: auto;
+}
+
+.filasPartidos{
+    font-size: 2vh;
+    font-family: "Impact", "fantasy";
+}
+
+.loadingContainerPartidos{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.678);
+    z-index: 299;
+}
+
+.loadingPartidos{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 300;
+    animation: roundPartidos 2s linear infinite;
+    background-color: green;
+    border-radius: 100px;
+}
+
+@keyframes roundPartidos{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}

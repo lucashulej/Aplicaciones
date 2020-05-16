@@ -1,0 +1,27 @@
+#fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/splashCodigos.png") no-repeat center / cover;
+}
+
+#logoSplash{
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    left: 20vw;
+    bottom: 20vh;
+    align-items: center;
+    justify-content: center;
+    animation: animacion 4s linear;
+    position: absolute;
+}
+
+@keyframes animacion{
+    from {transform: rotate(0deg);}
+    50% {bottom: 40vh;}
+    to {transform: rotate(720deg);}
+}

@@ -1,0 +1,26 @@
+<div class="fondo">
+
+  <button class="botonAceptar" (click)="subirPartido()">Aceptar</button>
+  <button class="botonVolver" (click)="return()">Volver</button>
+
+  <button type="button" class="sumaJugador1" id="sumaJugador1" (click)="sumar1()">+</button>
+  <button type="button" class="restaJugador1" id="restaJugador1" (click)="restar1()">-</button>
+  <input type="text" class="inputJugador1" id="inputJugador1" value="Jugador1">
+  <div class="puntos1" id="puntos1">0</div>
+
+  <input type="date" class="fecha" id="fecha">
+
+  <button type="button" class="sumaJugador2" id="sumaJugador2" (click)="sumar2()">+</button>
+  <button type="button" class="restaJugador2" id="restaJugador2" (click)="restar2()">-</button>
+  <input type="text" class="inputJugador2" id="inputJugador2" value="Jugador2">
+  <div class="puntos2" id="puntos2">0</div>
+
+  <div class="errorDatos" id="errorDatos" hidden>Datos Erroneos</div>
+
+  <button type="button" class="sacarFotoPartidos" id="sacarFotoPartidos" (click)="takePhoto()">+</button>
+</div>
+<div class="loadingContainer2" id="loadingContainer2" hidden>
+  <div class="loading2">
+    <img src="../../assets/logoEmpresa.png">
+  </div>
+</div>

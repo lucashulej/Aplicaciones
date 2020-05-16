@@ -1,0 +1,189 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  outline: none;
+}
+
+.fondo{
+  background-image: url("../../assets/fondo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.inputClave{
+  position: absolute; 
+  width: 70vw; 
+  height: 7vh;
+  top: 43vh;
+  left: 15vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.596);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 7vh;
+  font-size: 2vh;
+  font-family: "Arial Black", Gadget, sans-serif;
+  border-left: 5px solid orange;
+  border-right: 5px solid orange;
+  border-top: 5px solid orange;
+  border-bottom: 1px solid orange;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.botonClave{
+  position: absolute; 
+  width: 70vw; 
+  height: 7vh;
+  top: 50vh;
+  left: 15vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.596);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 5px solid orange;
+  background-color: orange;
+  font-size: 4vh;
+  font-style: italic;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.divDesactivado{
+  position: absolute;
+  width: 70vw; 
+  height: 10vh;
+  left: 15vw;
+  top: 10vh;
+  background-color: blue;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10vh;
+  font-size: 3vh;
+  font-style: italic;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.divActivado{
+  position: absolute;
+  width: 70vw; 
+  height: 10vh;
+  left: 15vw;
+  top: 10vh;
+  background-color: red;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10vh;
+  font-size: 3vh;
+  font-style: italic;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.botonActivar{
+  position: absolute; 
+  width: 70vw; 
+  height: 15vh;
+  top: 35vh;
+  left: 15vw;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.596);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-right: 5px solid red;
+  border-left: 5px solid red;
+  border-top: 5px solid red;
+  font-size: 4vh;
+  font-style: italic;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.botonActivar:active{
+  color: black;
+  background-color: red;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.botonDesactivar{
+  position: absolute; 
+  width: 70vw; 
+  height: 15vh;
+  top: 50vh;
+  left: 15vw;
+  color: blue;
+  background-color: rgba(0, 0, 0, 0.596);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-right: 5px solid blue;
+  border-left: 5px solid blue;
+  border-bottom: 5px solid blue;
+  font-size: 4vh;
+  font-style: italic;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.botonDesactivar:active{
+  color: black;
+  background-color: blue;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.botonVolver{
+  position: absolute; 
+  width: 70vw; 
+  height: 10vh;
+  top: 80vh;
+  left: 15vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 25px;
+  border: 5px solid orange;
+  font-size: 5vh;
+  font-style: italic;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.botonVolver:active{
+  background-color: rgba(0, 0, 0, 0.719);
+}
+
+.loadingContainer2{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.795);
+  z-index: 299;
+}
+
+.loading2{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 300;
+  animation: round 2s linear infinite;
+  background-color: orange;
+  border-radius: 100px;
+}
+
+@keyframes round{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}

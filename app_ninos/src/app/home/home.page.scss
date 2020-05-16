@@ -1,0 +1,285 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  outline: none;
+}
+
+.fondo{
+  background-image: url("../../assets/fondo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.botonVolver{
+  position: absolute; 
+  width: 50vw; 
+  height: 7vh;
+  top: 93vh;
+  left: 0vw;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 7vh; 
+  font-size: 3vh;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: orange;
+}
+
+.botonContinuar{
+  position: absolute; 
+  width: 50vw; 
+  height: 7vh;
+  top: 93vh;
+  left: 50vw;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 7vh; 
+  font-size: 3vh;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: aqua;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.botonIngles{
+  position: absolute;
+  width: 70vw;
+  height: 14vh;
+  background-image: url(../../assets/banderaIngles.webp);
+  background-size: 70vw 14vh;
+  background-repeat: no-repeat;
+  left: 15vw;
+  top: 1vh;
+  border-bottom: 10px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 10px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+}
+
+.botonIngles:active{
+  border-bottom: 6px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 6px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  transform: translateY(4px);
+}
+
+.botonEspaniol{
+  position: absolute;
+  width: 70vw;
+  height: 14vh;
+  background-image: url(../../assets/banderaEspaniol.webp);
+  background-size: 70vw 14vh;
+  background-repeat: no-repeat;
+  left: 15vw;
+  top: 16vh;
+  border-bottom: 10px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 10px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+}
+
+.botonEspaniol:active{
+  border-bottom: 6px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 6px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  transform: translateY(4px);
+}
+
+.botonPortugues{
+  position: absolute;
+  width: 70vw;
+  height: 14vh;
+  background-image: url(../../assets/banderaPortugues.webp);
+  background-size: 70vw 14vh;
+  background-repeat: no-repeat;
+  left: 15vw;
+  top: 31vh;
+  border-bottom: 10px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 10px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+}
+
+.botonPortugues:active{
+  border-bottom: 6px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 6px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  transform: translateY(4px);
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.botonAnimales{
+  position: absolute;
+  width: 70vw;
+  height: 14vh;
+  background-image: url(../../assets/animales.jpg);
+  background-size: 70vw 14vh;
+  background-repeat: no-repeat;
+  left: 15vw;
+  top: 48vh;
+  border-bottom: 10px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 10px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+}
+
+.botonAnimales:active{
+  border-bottom: 6px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 6px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  transform: translateY(4px);
+}
+
+.botonNumeros{
+  position: absolute;
+  width: 70vw;
+  height: 14vh;
+  background-image: url(../../assets/numeros.jpg);
+  background-size: 70vw 14vh;
+  background-repeat: no-repeat;
+  left: 15vw;
+  top: 63vh;
+  border-bottom: 10px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 10px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+}
+
+.botonNumeros:active{
+  border-bottom: 6px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 6px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  transform: translateY(4px);
+}
+
+.botonColores{
+  position: absolute;
+  width: 70vw;
+  height: 14vh;
+  background-image: url(../../assets/colores.jpg);
+  background-size: 70vw 14vh;
+  background-repeat: no-repeat;
+  left: 15vw;
+  top: 78vh;
+  border-bottom: 10px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 10px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+}
+
+.botonColores:active{
+  border-bottom: 6px solid transparent;
+  border-bottom-color:  rgba(0, 0, 0, 0.288);
+  border-right: 6px solid transparent;
+  border-right-color:  rgba(0, 0, 0, 0.288);
+  transform: translateY(4px);
+}
+
+.loadingContainer2{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.534);
+  z-index: 299;
+}
+
+.loading{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 300;
+  animation: round 2s linear infinite;
+  background-color: blue;
+  border-radius: 100px;
+}
+
+@keyframes round{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media screen and (orientation: landscape)
+{
+  .botonIngles{
+    width: 35vw;
+    height: 25vh;
+    top: 5vh;
+    background-size: 35vw 25vh;
+    left: 10vw;
+  }
+
+  .botonEspaniol{
+    width: 35vw;
+    height: 25vh;
+    top: 35vh;
+    background-size: 35vw 25vh;
+    left: 10vw;
+  }
+
+  .botonPortugues{
+    width: 35vw;
+    height: 25vh;
+    top: 65vh;
+    background-size: 35vw 25vh;
+    left: 10vw;
+  }
+
+  .botonAnimales{
+    width: 35vw;
+    height: 25vh;
+    top: 5vh;
+    background-size: 35vw 25vh;
+    left: 55vw;
+  }
+
+  .botonNumeros{
+    width: 35vw;
+    height: 25vh;
+    top: 35vh;
+    background-size: 35vw 25vh;
+    left: 55vw;
+  }
+
+  .botonColores{
+    width: 35vw;
+    height: 25vh;
+    top: 65vh;
+    background-size: 35vw 25vh;
+    left: 55vw;
+  }
+
+  .botonVolver{
+    font-size: 5vh;
+  }
+  
+  .botonContinuar{
+    font-size: 5vh;
+  }
+}

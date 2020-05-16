@@ -1,0 +1,20 @@
+<div class="fondo">
+  <button type="button" class="botonCargar" (click)="startScanning()">Cargar Qr</button>
+  <button type="button" class="botonLimpiar" (click)="limpiar()">Limpiar</button>
+  <div id="visorCodigos" class="visorCodigos">Total = 0</div>
+  <button type="button" class="botonVolver" (click)="returnToLogin()">Volver a inicio</button>
+  <div id="errorComun" class="errorComun" hidden>
+    <p>No se puede cargar un codigo mas de 1 vez</p>
+  </div>
+  <div id="errorAdmin" class="errorAdmin" hidden>
+    <p>No se puede cargar un codigo mas de 2 veces</p>
+  </div>
+  <div id="errorCodigo" class="errorCodigo" hidden>
+    <p>El codigo no esta registrado</p>
+  </div>
+</div>
+<div class="loadingContainer" id="loadingContainer2" hidden>
+  <div class="loading">
+    <img src="../../assets/logoEmpresa.png">
+  </div>
+</div>
